@@ -484,22 +484,26 @@ defmodule Explorer.Chain.Transaction do
         hash: hash
       }) do
     case do_decoded_input_data(data, abi, address_hash, hash) do
-      {:error, :could_not_decode} -> # In some cases transactions use methods of some unpredictadle contracts, so we can try to look up for method in a whole DB
+      # In some cases transactions use methods of some unpredictadle contracts, so we can try to look up for method in a whole DB
+      {:error, :could_not_decode} ->
         case decoded_input_data(%__MODULE__{
-          to_address: %{smart_contract: nil},
-          input: %{bytes: data},
-          hash: hash
-        }) do
+               to_address: %{smart_contract: nil},
+               input: %{bytes: data},
+               hash: hash
+             }) do
           {:error, :contract_not_verified, []} ->
             {:error, :could_not_decode}
+
           {:error, :contract_not_verified, candidates} ->
             {:error, :contract_verified, candidates}
+
           output ->
             output
         end
+
       output ->
         output
-      end
+    end
   end
 
   defp do_decoded_input_data(data, abi, address_hash, hash) do

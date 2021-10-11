@@ -16,6 +16,7 @@
 - [#4579](https://github.com/blockscout/blockscout/pull/4579) - Write contract page: Resize inputs; Improve multiplier selector
 
 ### Fixes
+- [#4749](https://github.com/blockscout/blockscout/pull/4749) - Block page: Type case gas limit value before comparison
 - [#4729](https://github.com/blockscout/blockscout/pull/4729) - Fix bugs with fees in cases of txs with `gas price = 0`
 - [#4725](https://github.com/blockscout/blockscout/pull/4725) - Fix hardcoded coin name on transaction's and block's page
 - [#4717](https://github.com/blockscout/blockscout/pull/4717) - Contract verification fix: check only success creation tx
@@ -127,7 +128,7 @@
 - [#4299](https://github.com/blockscout/blockscout/pull/4299) - Added [Sourcify](https://sourcify.dev) verification API endpoint
 - [#4267](https://github.com/blockscout/blockscout/pull/4267) - Extend verification through [Sourcify](https://sourcify.dev) smart-contract verification: fetch smart contract metadata from Sourcify repo if it has been already verified there
 - [#4241](https://github.com/blockscout/blockscout/pull/4241) - Reload transactions on the main page without reloading of the whole page
-- [#4218](https://github.com/blockscout/blockscout/pull/4218) - Hide long arrays in smart-contracts 
+- [#4218](https://github.com/blockscout/blockscout/pull/4218) - Hide long arrays in smart-contracts
 - [#4205](https://github.com/blockscout/blockscout/pull/4205) - Total transactions fees per day API endpoint
 - [#4158](https://github.com/blockscout/blockscout/pull/4158) - Calculate total fee per day
 - [#4067](https://github.com/blockscout/blockscout/pull/4067) - Display LP tokens USD value and custom metadata in tokens dropdown at address page
@@ -137,7 +138,7 @@
 - [#4346](https://github.com/blockscout/blockscout/pull/4346) - Fix internal server error on raw-trace transaction page
 - [#4345](https://github.com/blockscout/blockscout/pull/4345) - Fix bug on validator's address transactions page(Support effectiveGasPrice property in receipt (geth specific))
 - [#4342](https://github.com/blockscout/blockscout/pull/4342) - Remove dropped/replaced txs from address transactions page
-- [#4320](https://github.com/blockscout/blockscout/pull/4320) - Fix absence of imported smart-contracts' source code in `getsourcecode` API method 
+- [#4320](https://github.com/blockscout/blockscout/pull/4320) - Fix absence of imported smart-contracts' source code in `getsourcecode` API method
 - [#4274](https://github.com/blockscout/blockscout/pull/4302) - Fix search token-autocomplete
 - [#4316](https://github.com/blockscout/blockscout/pull/4316) - Fix `/decompiled-contracts` bug
 - [#4310](https://github.com/blockscout/blockscout/pull/4310) - Fix logo URL redirection, set font-family defaults for chart.js
@@ -280,7 +281,7 @@
 
 ### Features
 - [#3558](https://github.com/blockscout/blockscout/pull/3558) - Focus to search field with a forward slash key
-- [#3541](https://github.com/blockscout/blockscout/pull/3541) - Staking dapp stats: total number of delegators, total staked amount 
+- [#3541](https://github.com/blockscout/blockscout/pull/3541) - Staking dapp stats: total number of delegators, total staked amount
 - [#3540](https://github.com/blockscout/blockscout/pull/3540) - Apply DarkForest custom theme to NFT instances
 
 ### Fixes
